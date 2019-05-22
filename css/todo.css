@@ -1,0 +1,49 @@
+*{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+:root{
+    --primary:#f44336;
+    --secondary:#d32f2f;
+    --text-color:#455a64;
+    --border:#b3e5fc;
+    --bold:600;
+}
+html,body{
+    height: 100vh;
+    width: 100vw;
+    color: var(--text-color);
+}
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+}
+.todo-header{
+    text-align:center;
+    border:2px solid var(--border);
+    font-weight: var(--bold);
+    color: var(--primary);
+}
+.head{
+    text-align: center;
+}
+.row,.form{
+    width: 100%;
+}
+.form{
+    padding: 2% 5%;
+}
+.todo-text{
+    font-size: 22px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+.myTodoList{
+    padding-left: 5%;
+}
+.todo-completed{
+    text-decoration: line-through;
+}

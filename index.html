@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo Application</title>
+    <!-- bootstap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Todo css -->
+    <link rel="stylesheet" href="./css/todo.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row d-flex flex-column">
+            <h2 class="todo-header">Todo Application</h2>
+            <h3 class="head">Add today's to do....</h3>
+        </div>
+        <div class="row">
+            <form class="form d-flex flex-column justify-content-center">
+                <input type="text" name="todo-text" class="todo-text" id="todo-text" placeholder="My todo">
+                <button class="btn btn-primary mt-3" onclick="todoApp.addTodo()" type="button">Add</button>
+            </form>
+        </div>
+        <div class="col myTodoList">
+            <div class="pagination" id="pagination"></div>
+            <h2 class="myTodoListHead">My Todo list</h2>
+            <ul class="todo-list" id="todo-list" ondblclick="todoApp.onToggleEdit()"></ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <!-- External Js -->
+        <script src="app/services/todoService.js"></script>
+        <script src="app/pagination.js"></script>
+        <script src="./app/todo.js"></script>
+</body>
+
+</html>
